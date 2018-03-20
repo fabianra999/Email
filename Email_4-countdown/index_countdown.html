@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"><META NAME="referrer" CONTENT="no-referrer"><meta charset="utf-8" /><!-- utf-8 works for most cases --><meta name="viewport" content="width=device-width" /><!-- Forcing initial-scale shouldn't be necessary --><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- Use the latest (edge) version of IE rendering engine --><meta name="x-apple-disable-message-reformatting" /><!-- Disable auto-scale in iOS 10 Mail entirely --><meta name="format-detection" content="telephone=no" />
+	<title></title>
+	<!-- Web Font / @font-face : BEGIN --><!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. --><!--[if mso]>
+    <style>
+        * {
+            font-family: sans-serif !important;
+        }
+    </style>
+    <![endif]--><!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ --><!--[if !mso]>
+    <!-->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css" /><!--
+    <![endif]--><!-- Web Font / @font-face : END -->
+	<style type="text/css">/* ///////// CLIENT-SPECIFIC STYLES ///////// */
+
+        #outlook a {
+            padding: 0;
+        }
+
+        /* Force Outlook to provide a "view in browser" message */
+
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        /* Force Hotmail to display emails at full width */
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        /* Force Hotmail to display normal line spacing */
+
+        body,
+        table,
+        td,
+        p,
+        a,
+        li,
+        blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* Prevent WebKit and Windows mobile changing default text sizes */
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        /* Remove spacing between tables in Outlook 2007 and up */
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* Allow smoother rendering of resized image in Internet Explorer */
+
+        /* ///////// RESET STYLES ///////// */
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            max-width: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body,
+        #bodyTable,
+        #bodyCell {
+            height: 100% !important;
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            font-size: inherit;
+            margin: 0;
+            padding: 0;
+        }
+
+        a:active,
+        a:hover {
+            text-decoration: none !important;
+        }
+
+        /* ///////// TEMPLATE STYLES ///////// */
+
+        /* ========== Page Styles ========== */
+
+        #bodyCell {
+            padding: 20px;
+        }
+
+        #templateContainer {
+            width: 602px;
+        }
+
+        /**
+        * @tab Page
+        * @section background style
+        * @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+        * @theme page
+        */
+
+        body,
+        #bodyTable {
+            background-color: #fff;
+            color: #333;
+            font-family: Lato, sans-serif;
+            font-size: 14px;
+        }
+
+        .menuNav a {
+            font-size: 11px !important;
+        }
+
+        .menuNav {
+            text-align: center;
+        }
+
+        /* ///////// MOBILE STYLES ///////// */
+
+        @media only screen and (max-width: 420px) {
+            /* /////// CLIENT-SPECIFIC MOBILE STYLES /////// */
+            body,
+            table,
+            td,
+            p,
+            a,
+            li,
+            blockquote {
+                -webkit-text-size-adjust: none !important;
+            }
+
+            /* Prevent Webkit platforms from changing default text sizes */
+            body {
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+
+            /* Prevent iOS Mail from adding padding to the body */
+            /**
+            * @tab Page
+            * @section background style
+            * @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+            * @theme page
+            */
+            #bodyCell {
+                padding: 0;
+            }
+
+            /* /////// MOBILE TEMPLATE STYLES /////// */
+            /* ======== Page Styles ======== */
+            /**
+            * @tab Mobile Styles
+            * @section template width
+            * @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
+            */
+            #templateContainer {
+                border: none !important;
+                max-width: 602px !important;
+                width: 100% !important;
+            }
+
+            .linear-td {
+                clear: both;
+                display: block !important;
+                padding-left: 0px !important;
+                padding-right: 0 !important;
+                width: 100% !important;
+            }
+
+            .order-item+.order-item {
+                margin-top: 30px;
+            }
+
+            .order-item--empty {
+                display: none !important;
+            }
+
+            /* Nav */
+            .mobile-nav,
+            .x_mobile-nav {
+                background: #222;
+                display: table-cell !important;
+                padding: 15px 0px !important;
+                text-align: center;
+            }
+
+            .desktop-nav,
+            .x_desktop-nav {
+                display: none !important;
+            }
+
+            .menuNav a {
+                font-size: 9px !important;
+            }
+
+            /* Footer */
+            .footer-logo--desktop,
+            .x_footer-logo--desktop {
+                display: none !important;
+            }
+
+            .footer-logo--mobile,
+            .x_footer-logo--mobile {
+                display: block !important;
+                visibility: visible !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 320px) {
+            body,
+            table,
+            td,
+            p,
+            a,
+            li,
+            blockquote {
+                -webkit-text-size-adjust: 100% !important;
+            }
+
+            /* Prevent Webkit platforms from changing default text sizes */
+            body {
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+
+            /* Prevent iOS Mail from adding padding to the body */
+            .menuNav a {
+                font-size: 8px !important;
+            }
+
+            .footer-logo--desktop,
+            .x_footer-logo--desktop {
+                display: none !important;
+            }
+
+        }
+
+        @media all and (min-device-pixel-ratio: 1.5) {
+            .menuNav a {
+                font-size: 11px !important;
+            }
+        }
+	</style>
+</head>
+<body leftmargin="0" marginheight="0" marginwidth="0" offset="0" style="background: #fff;" topmargin="0"><!--[if mso]>
+<style type="text/css">
+    body, table, td {
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+</style>
+<![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" role="presentation" width="100%">
+	<tbody>
+		<tr>
+			<td align="center" id="bodyCell" valign="top"><!-- BEGIN TEMPLATE // -->
+			<table border="0" cellpadding="0" cellspacing="0" id="templateContainer" role="presentation" style="border: 1px solid #888; text-align: left; max-width: 602px;"><!-- Header-->
+				<tbody>
+					<!-- //Header--><!--COMIENZA CONTENIDO-->
+					<tr>
+						<td align="center" style="background: #fff;" valign="top"><!-- BEGIN // --><!--list of products-->
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+							<tbody>
+								<tr>
+									<td style="color: inherit; text-align: left; text-decoration: none;" valign="top"><a href="https://www.singularcom.com.co/detalles/postpago/MATE10PR/Huawei_Mate_10_Pro"><img alt="mate 9" src="http://www.alienmail.co/uploads/1521239402.png" style="display: block; border-width: 0px; border-style: solid; width: 600px; height: 190px;" /> </a></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer">
+							<tbody>
+								<tr>
+									<td style=""><a href="https://www.singularcom.com.co/detalles/postpago/HUPSMART/Huawei_P_Smart" target="_blank"><img alt="mate 9" src="http://www.alienmail.co/uploads/1521239571.png" style="display: block; width: 300px; height: 446px;" /> </a></td>
+									<td style=""><a href="https://www.singularcom.com.co/detalles/prepago/LGK4L/Lg_K4_Lite" target="_blank"><img alt="mate 9" src="http://www.alienmail.co/uploads/1521239646.png" style="display: block; width: 300px; height: 446px;" /> </a></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnTextContentContainer">
+							<tbody>
+								<tr>
+									<td style=""><a href="https://www.singularcom.com.co/detalles/postpago/MOOTOC/Motorola_Moto_C" target="_blank"><img alt="mate 9" src="http://www.alienmail.co/uploads/1521239698.png" style="display: block; width: 300px; height: 451px;" /> </a></td>
+									<td style=""><a href="https://www.singularcom.com.co/detalles/prepago/ALCATLU5/Alcatel_U5" target="_blank"><img alt="mate 9" src="http://www.alienmail.co/uploads/1521239731.png" style="display: block; width: 300px; height: 451px;" /> </a></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+							<tbody>
+								<tr>
+									<td style="color: inherit; text-align: left; text-decoration: none;" valign="top"><a href="https://www.singularcom.com.co/detalles/prepago/AVPRO450/Avvio_Pro_450" target="_blank"><img alt="mate 9" src="http://www.alienmail.co/uploads/1521239773.png" style="display: block; border-width: 0px; border-style: solid; width: 600px; height: 461px;" /> </a></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+							<tbody>
+								<tr>
+									<td style="color: inherit; text-align: left; text-decoration: none;" valign="top"><a href="https://www.singularcom.com.co" target="_blank"><img alt="mate 9" src="http://www.alienmail.co/uploads/1521239805.png" style="display: block; border-width: 0px; border-style: solid; width: 600px; height: 94px;" /> </a></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+							<tbody>
+								<tr>
+									<td style="color: inherit; text-align: left; text-decoration: none;" valign="top"><a href="https://www.singularcom.com.co" target="_blank"><img alt="mate 9" src="http://www.alienmail.co/uploads/1521239845.png" style="display: block; border-width: 0px; border-style: solid; width: 600px; height: 334px;" /> </a></td>
+								</tr>
+							</tbody>
+						</table>
+
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+							<tbody>
+                                    <tr style="background: #f19600;">
+                                            <td style="border-left:0.5px solid #afafaf;padding: 5%;font-size: 1.0 em;font-weight: bold" ><img alt=""  src="http://em.colombiahosting.com.co/editor_images2/image_51bd9542/logo.png" style="width: 300px; height: 37px;" width="300" /></td>
+                                            <td align="center" style="border-right:0.5px solid #fff;padding: 5%;font-size: 1.0 em;font-weight: 400;color:#fff" width="30%">Ahora s&iacute;guenos en<br />
+                                            <a href="https://www.facebook.com/Singularcom/" target="_blank"><img height="58" src="http://em.colombiahosting.com.co/editor_images2/image_51bd9542/face(1).png" style="width: 58px; height: 58px;" width="58" /></a> <a href="https://www.instagram.com/singular_com/" target="_blank"><img height="58" src="http://em.colombiahosting.com.co/editor_images2/image_51bd9542/ins(1).png" style="width: 58px; height: 58px;" width="58" /></a></td>
+                                        </tr>
+                
+                                        <tr style="background:#fff">
+                                                <td align="center" colspan="2" style="font-size: 1.0 em;font-weight: 400;padding: 2%;border-top:3px solid #CECED1;border-bottom:0.5px solid #afafaf;border-left:0.5px solid #afafaf;border-right:0.5px solid #afafaf">Si ya no quieres seguir recibiendo correos electr&oacute;nicos de Singularcom o recibiste este mail<br />
+                                                por error, <unsubscribe>Haz click aqu&iacute;</unsubscribe> para cancelar tu suscripci&oacute;n.&nbsp; <strong>Singular Comunicaciones S.A. | Todos los derechos reservados - 2016</strong><br />
+                                                <a href="http://www.singularcom.com.co/portal/">www.singularcom.com.co</a></td>
+                                            </tr>
+							</tbody>
+						</table>
+						<!--//list of products--></td>
+					</tr>
+					<!--FIN CONTENIDO--><!--Separators-->
+                    <!-- //Separators-->
+                    
+                   
+				</tbody>
+			</table>
+
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

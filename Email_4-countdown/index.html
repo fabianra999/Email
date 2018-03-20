@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <META NAME="referrer" CONTENT="no-referrer">
+    <meta charset="utf-8"/>
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"/>
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting"/>
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no"/>
+    <title></title>
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+    <style>
+        * {
+            font-family: sans-serif !important;
+        }
+    </style>
+    <![endif]-->
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]>
+    <!-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700'
+          rel='stylesheet' type='text/css'/>
+    <!--
+    <![endif]-->
+    <!-- Web Font / @font-face : END -->
+    <style type="text/css">
+
+        /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+        #outlook a {
+            padding: 0;
+        }
+
+        /* Force Outlook to provide a "view in browser" message */
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        /* Force Hotmail to display emails at full width */
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+
+        /* Force Hotmail to display normal line spacing */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* Prevent WebKit and Windows mobile changing default text sizes */
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        /* Remove spacing between tables in Outlook 2007 and up */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* Allow smoother rendering of resized image in Internet Explorer */
+
+        /* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            max-width: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body, #bodyTable, #bodyCell {
+            height: 100% !important;
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+        }
+
+        h1, h2, h3, h4, h5, h6, p {
+            font-size: inherit;
+            margin: 0;
+            padding: 0;
+        }
+
+        a:active, a:hover {
+            text-decoration: none !important;
+        }
+
+        /* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
+
+        /* ========== Page Styles ========== */
+
+        #bodyCell {
+            padding: 20px;
+        }
+
+        #templateContainer {
+            width: 602px;
+        }
+
+        /**
+        * @tab Page
+        * @section background style
+        * @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+        * @theme page
+        */
+        body,
+        #bodyTable {
+            background-color: #fff;
+            color: #333;
+            font-family: Lato, sans-serif;
+            font-size: 14px;
+        }
+
+        .menuNav a {
+            font-size: 11px !important;
+        }
+
+        .menuNav {
+            text-align: center;
+        }
+
+        /* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
+
+        @media only screen and (max-width: 420px) {
+            /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+            body, table, td, p, a, li, blockquote {
+                -webkit-text-size-adjust: none !important;
+            }
+
+            /* Prevent Webkit platforms from changing default text sizes */
+            body {
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+
+            /* Prevent iOS Mail from adding padding to the body */
+            /**
+            * @tab Page
+            * @section background style
+            * @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
+            * @theme page
+            */
+            #bodyCell {
+                padding: 0;
+            }
+
+            /* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
+            /* ======== Page Styles ======== */
+            /**
+            * @tab Mobile Styles
+            * @section template width
+            * @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
+            */
+            #templateContainer {
+                border: none !important;
+                max-width: 602px !important;
+                width: 100% !important;
+            }
+
+            .linear-td {
+                clear: both;
+                display: block !important;
+                padding-left: 0px !important;
+                padding-right: 0 !important;
+                width: 100% !important;
+            }
+
+            .order-item + .order-item {
+                margin-top: 30px;
+            }
+
+            .order-item--empty {
+                display: none !important;
+            }
+
+            /* Nav */
+            .mobile-nav,
+            .x_mobile-nav {
+                background: #222;
+                display: table-cell !important;
+                padding: 15px 0px !important;
+                text-align: center;
+            }
+
+            .desktop-nav,
+            .x_desktop-nav {
+                display: none !important;
+            }
+
+            .menuNav a {
+                font-size: 9px !important;
+            }
+
+            /* Footer */
+            .footer-logo--desktop,
+            .x_footer-logo--desktop {
+                display: none !important;
+            }
+
+            .footer-logo--mobile,
+            .x_footer-logo--mobile {
+                display: block !important;
+                visibility: visible !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 320px) {
+            body, table, td, p, a, li, blockquote {
+                -webkit-text-size-adjust: 100% !important;
+            }
+
+            /* Prevent Webkit platforms from changing default text sizes */
+            body {
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+
+            /* Prevent iOS Mail from adding padding to the body */
+            .menuNav a {
+                font-size: 8px !important;
+            }
+
+            .footer-logo--desktop,
+            .x_footer-logo--desktop {
+                display: none !important;
+            }
+
+        }
+
+        @media all and (min-device-pixel-ratio: 1.5) {
+            .menuNav a {
+                font-size: 11px !important;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0"
+      offset="0" style="background: #fff;">
+<!--[if mso]>
+<style type="text/css">
+    body, table, td {
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+</style>
+<![endif]-->
+<table role="presentation" align="center" border="0" cellpadding="0"
+       cellspacing="0" height="100%" width="100%">
+    <tr>
+        <td align="center" valign="top" id="bodyCell">
+            <!-- BEGIN TEMPLATE // -->
+            <table role="presentation"
+                   style="border: 1px solid #888; text-align: left; max-width: 602px;"
+                   border="0" cellpadding="0" cellspacing="0"
+                   id="templateContainer">
+                <!-- Header-->
+                <tr>
+                    <td align="center" valign="top"
+                        style="background: #fff;">
+                        <table role="presentation" border="0"
+                               cellpadding="0" cellspacing="0"
+                               width="100%" bgcolor="#f8f8f9"
+                               style="font-size: 10px;">
+                            <tr>
+                                <td valign="middle" width="376"
+                                    style="text-align: center;">
+                                    <table border="0"
+                                           cellpadding="0"
+                                           cellspacing="0"
+                                           width="100%"
+                                           class="menuNav">
+                                        <tr>
+                                            <td class="mcnTopHeaderContent"
+                                                style="padding-top: 0; padding-bottom: 0; text-align:left;"
+                                                valign="top">
+                                                <a href="#"><img
+                                                        alt=""
+                                                        src="img/logo.png"
+                                                        style="padding-bottom: 0; display: inline !important; vertical-align: bottom;
+     padding: 10px 10px 0;"
+                                                        class="mcnImage"
+                                                        align="middle"></a>
+                                            </td>
+                                            <td>
+                                                <table border="0"
+                                                       cellpadding="0"
+                                                       cellspacing="0"
+                                                       rowspan="2"
+                                                       width="100%"
+                                                       style=" margin:auto; text-align:center;">
+                                                    <tr>
+                                                        <td width="33%"
+                                                            style="padding:10px;">
+                                                            <a href="#"
+                                                               target="_blank"
+                                                               style="font-size: 9px; text-decoration: none; color: #333333;
+                                                                                                               vertical-align: middle; font-weight:bold;">
+                                                                Equipos</a>
+                                                        </td>
+                                                        <td width="33%">
+                                                            <a href="#"
+                                                               target="_blank"
+                                                               style="font-size: 9px; text-decoration: none; color: #333333; vertical-align: middle;font-weight:bold;">Accesorios</a>
+                                                        </td>
+                                                        <td width="33%">
+                                                            <a href="#"
+                                                               target="_blank"
+                                                               style="font-size: 9px; text-decoration: none; color: #333333; vertical-align: middle;font-weight:bold;">Ofertas</a>
+                                                        </td>
+
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table width="100%">
+                                        <tr>
+                                            <td style="padding: 10px;">
+                                                <p style="text-align: center; font-family:lato; font-size: 10px;">
+                                                    <span style="color: #ef7d00;">Llámanos:</span>
+                                                    PBX:(57-1) 7470606 -
+                                                    322 747 06 06.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- //Header-->
+
+                <!--COMIENZA CONTENIDO-->
+
+                <tr>
+                    <td align="center" valign="top"
+                        style="background: #fff;">
+                        <!-- BEGIN // -->
+                        <table role="presentation" border="0"
+                               cellpadding="0" cellspacing="0"
+                               width="100%">
+                            <tr>
+                                <td valign="top"
+                                    style="color: inherit; text-align: left; text-decoration: none;">
+                                    <a href="#">
+                                        <!-- Image => png | jpg -->
+                                        <!--[if mso]>
+                                        <img src="img/promo_1.jpg">
+                                        <![endif]-->
+                                        <!--[if !mso]><!-->
+                                        <img src="img/promo_1.gif"
+                                             border="0"
+                                             style="display:block;"
+                                             alt="">
+                                        <!--<![endif]-->
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+                <!--FIN CONTENIDO-->
+
+                <!--Separators-->
+                <tr>
+                    <td align="center" valign="top"
+                        style="background: #222; color: #fff; text-align: center; padding: 10px 30px;">
+                    </td>
+                </tr>
+                <!-- //Separators-->
+
+                <!-- terms and Conditions -->
+                <tr>
+                    <td align="center" valign="top"
+                        style="background: #222; color: #fff; text-align: center;">
+                        <table role="presentation" border="0"
+                               cellpadding="0" cellspacing="0"
+                               width="90%" align="center">
+                            <!--Social-->
+                            <tr>
+                                <td valign="top">
+                                    <table border="0"
+                                           cellpadding="0"
+                                           cellspacing="0"
+                                           align="center">
+                                        <tr>
+                                            <td width="28%">
+                                                <a href="#"
+                                                   style="color: #fff; text-decoration: none;">
+                                                    <img src="https://www.singularcom.com.co/resources/img/redes/face.png"
+                                                         alt="Facebook"
+                                                         width="30"/>
+                                                </a>
+                                            </td>
+                                            <td width="28%">
+                                                <a href="#"
+                                                   style="color: #fff; text-decoration: none;">
+                                                    <img src="https://www.singularcom.com.co/resources/img/redes/inst.png"
+                                                         alt="Instagram"
+                                                         width="30"/>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!--//Social-->
+                            <tr>
+                                <td height="15"></td>
+                            </tr>
+                            <tr>
+                                <td class="mcnTextContent"
+                                    style="padding-top:10px; padding-right:18px; padding-bottom:0; padding-left:18px;"
+                                    valign="top">
+
+                                    <p style="font-size: 11px; color: #ffffff; text-align: justify;">
+                                        Lorem Ipsum es simplemente el
+                                        texto de relleno de las
+                                        imprentas y archivos de texto.
+                                        Lorem Ipsum ha sido el texto de
+                                        relleno estándar de las
+                                        industrias desde el año 1500,
+                                        cuando un impresor (N. del T.
+                                        persona que se dedica a la
+                                        imprenta) desconocido usó una
+                                        galería de textos y los mezcló
+                                        de tal manera que logró hacer un
+                                        libro de textos especimen.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="15"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- //Terms and Conditions -->
+
+                <!--Footer Singular-->
+                <tr>
+                    <td align="center" valign="top"
+                        style="background: #1a1a1a; color: #888; padding: 10px 30px; text-align: center;">
+
+                        <table role="presentation" border="0"
+                               cellpadding="0" cellspacing="0"
+                               width="100%">
+                            <tr>
+                                <td valign="top"
+                                    style="padding: 20px;"
+                                    align="center">
+                                    <a href="#">
+                                        <img src="img/logo_2.png"
+                                             alt="Singularcom"
+                                             height="31" width="291"
+                                             style="color:white;"/>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- //Footer Singular-->
+
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- Footer-->
+<table style="width: 550" class="dashedBorder" border="0" cellSpacing="0" cellPadding="5" width="100%" align="center"
+       bgcolor="#EEEEEE">
+    <tr>
+        <td style="FONT-FAMILY: Arial; WHITE-SPACE: normal; FONT-SIZE: 11px" valign="middle" align="center"><font
+                color="#444444">Este mensaje es enviado por que autorizaste la recepción de emails de Singularcom <a
+                href="#"
+                style="color: #ef7d00"><b>Política de Tratamiento de Datos</b></a>.</font>
+        </td>
+    </tr>
+</table>
+<!-- Footer-->
+</body>
+
